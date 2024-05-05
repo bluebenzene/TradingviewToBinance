@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 binance_client = Client(os.getenv('BINANCE_API_KEY'), os.getenv('BINANCE_SECRET_KEY'))
-TRADINGVIEW_IP_ADDRESSES = ['52.89.214.238', '34.212.75.30', '54.218.53.128','52.32.178.7','127.0.0.1']  # Replace with actual TradingView IPs
+TRADINGVIEW_IP_ADDRESSES = ['52.89.214.238', '34.212.75.30', '54.218.53.128','52.32.178.7']  
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
